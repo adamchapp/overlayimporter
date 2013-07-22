@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "OverlayImporterViewController.h"
+#import "OverlayImportController.h"
 
 @implementation AppDelegate
 
@@ -16,10 +18,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    return YES;
+}
+
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    OverlayImportController * importer = [[OverlayImportController alloc] init];
+    [importer addOverlayToDocumentsDirectory:url];
+    
+    OverlayImporterViewController *importController = (OverlayImporterViewController *)[self.window rootViewController];
+    
+    NSLog(@"URL: %@", url.absoluteString);
+    
+    if ( [url isFileURL] ) {
+        [importController.zipFileName setText:url.absoluteString];
+    }
+    
     return YES;
 }
 

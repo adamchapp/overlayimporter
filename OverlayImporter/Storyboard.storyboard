@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="wo3-0x-fEL">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Overlay Importer View Controller-->
+        <scene sceneID="3m1-v9-PWO">
+            <objects>
+                <viewController storyboardIdentifier="importerView" id="wo3-0x-fEL" customClass="OverlayImporterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="scV-E7-lhR">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ZIP overlay importer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0m6-xi-JKd">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OzS-i2-ZW7">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="sIt-3I-FaP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0m6-xi-JKd" firstAttribute="top" secondItem="scV-E7-lhR" secondAttribute="top" constant="160" id="BFi-p1-KhC"/>
+                            <constraint firstItem="OzS-i2-ZW7" firstAttribute="top" secondItem="scV-E7-lhR" secondAttribute="top" constant="240" id="MVf-LK-REB"/>
+                            <constraint firstItem="OzS-i2-ZW7" firstAttribute="centerX" secondItem="scV-E7-lhR" secondAttribute="centerX" type="default" id="lhf-wi-pPc"/>
+                            <constraint firstItem="OzS-i2-ZW7" firstAttribute="centerX" secondItem="0m6-xi-JKd" secondAttribute="centerX" type="default" id="uam-dl-wXL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="zipFileName" destination="OzS-i2-ZW7" id="x6h-z3-IIk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wSH-3c-E50" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5" y="-65"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="OverlayImporterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/OverlayImporterViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="zipFileName" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

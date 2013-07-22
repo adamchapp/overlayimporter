@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EEBEA3EC179988E70047D957 /* MapMessage_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EEBEA3EB179988E70047D957 /* MapMessage_Icon.png */; };
+		EEBEA3F017998E9E0047D957 /* OverlayImportController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBEA3EF17998E9E0047D957 /* OverlayImportController.m */; };
+		EEBEA3FE179994210047D957 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = EEBEA3F4179994210047D957 /* ioapi.c */; };
+		EEBEA3FF179994210047D957 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = EEBEA3F6179994210047D957 /* mztools.c */; };
+		EEBEA400179994210047D957 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = EEBEA3F8179994210047D957 /* unzip.c */; };
+		EEBEA401179994210047D957 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = EEBEA3FA179994210047D957 /* zip.c */; };
+		EEBEA402179994210047D957 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = EEBEA3FD179994210047D957 /* ZipArchive.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EECEA1D617994BC000BFC1F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECEA1D517994BC000BFC1F5 /* UIKit.framework */; };
 		EECEA1D817994BC000BFC1F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECEA1D717994BC000BFC1F5 /* Foundation.framework */; };
 		EECEA1DA17994BC000BFC1F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECEA1D917994BC000BFC1F5 /* CoreGraphics.framework */; };
@@ -24,6 +31,9 @@
 		EECEA1FC17994BC000BFC1F5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECEA1DB17994BC000BFC1F5 /* CoreData.framework */; };
 		EECEA20417994BC000BFC1F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EECEA20217994BC000BFC1F5 /* InfoPlist.strings */; };
 		EECEA20717994BC000BFC1F5 /* OverlayImporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EECEA20617994BC000BFC1F5 /* OverlayImporterTests.m */; };
+		EECEA2231799620900BFC1F5 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EECEA2221799620900BFC1F5 /* libz.1.2.5.dylib */; };
+		EECEA2251799666C00BFC1F5 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECEA2241799666C00BFC1F5 /* Storyboard.storyboard */; };
+		EECEA228179966B500BFC1F5 /* OverlayImporterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECEA227179966B500BFC1F5 /* OverlayImporterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +47,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EEBEA3EB179988E70047D957 /* MapMessage_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MapMessage_Icon.png; sourceTree = "<group>"; };
+		EEBEA3EE17998E9E0047D957 /* OverlayImportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayImportController.h; sourceTree = "<group>"; };
+		EEBEA3EF17998E9E0047D957 /* OverlayImportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayImportController.m; sourceTree = "<group>"; };
+		EEBEA3F3179994210047D957 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		EEBEA3F4179994210047D957 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		EEBEA3F5179994210047D957 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		EEBEA3F6179994210047D957 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		EEBEA3F7179994210047D957 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		EEBEA3F8179994210047D957 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		EEBEA3F9179994210047D957 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		EEBEA3FA179994210047D957 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		EEBEA3FB179994210047D957 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		EEBEA3FC179994210047D957 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		EEBEA3FD179994210047D957 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
 		EECEA1D217994BC000BFC1F5 /* OverlayImporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverlayImporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECEA1D517994BC000BFC1F5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EECEA1D717994BC000BFC1F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +82,10 @@
 		EECEA20317994BC000BFC1F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EECEA20517994BC000BFC1F5 /* OverlayImporterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayImporterTests.h; sourceTree = "<group>"; };
 		EECEA20617994BC000BFC1F5 /* OverlayImporterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayImporterTests.m; sourceTree = "<group>"; };
+		EECEA2221799620900BFC1F5 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		EECEA2241799666C00BFC1F5 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		EECEA226179966B500BFC1F5 /* OverlayImporterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayImporterViewController.h; sourceTree = "<group>"; };
+		EECEA227179966B500BFC1F5 /* OverlayImporterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayImporterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EECEA2231799620900BFC1F5 /* libz.1.2.5.dylib in Frameworks */,
 				EECEA1D617994BC000BFC1F5 /* UIKit.framework in Frameworks */,
 				EECEA1D817994BC000BFC1F5 /* Foundation.framework in Frameworks */,
 				EECEA1DA17994BC000BFC1F5 /* CoreGraphics.framework in Frameworks */,
@@ -86,9 +115,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EEBEA3ED17998E880047D957 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EEBEA3F1179994210047D957 /* ZipArchive */,
+				EECEA1E617994BC000BFC1F5 /* AppDelegate.h */,
+				EECEA1E717994BC000BFC1F5 /* AppDelegate.m */,
+				EECEA226179966B500BFC1F5 /* OverlayImporterViewController.h */,
+				EECEA227179966B500BFC1F5 /* OverlayImporterViewController.m */,
+				EEBEA3EE17998E9E0047D957 /* OverlayImportController.h */,
+				EEBEA3EF17998E9E0047D957 /* OverlayImportController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		EEBEA3F1179994210047D957 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				EEBEA3F2179994210047D957 /* minizip */,
+				EEBEA3FC179994210047D957 /* ZipArchive.h */,
+				EEBEA3FD179994210047D957 /* ZipArchive.mm */,
+			);
+			path = ZipArchive;
+			sourceTree = "<group>";
+		};
+		EEBEA3F2179994210047D957 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				EEBEA3F3179994210047D957 /* crypt.h */,
+				EEBEA3F4179994210047D957 /* ioapi.c */,
+				EEBEA3F5179994210047D957 /* ioapi.h */,
+				EEBEA3F6179994210047D957 /* mztools.c */,
+				EEBEA3F7179994210047D957 /* mztools.h */,
+				EEBEA3F8179994210047D957 /* unzip.c */,
+				EEBEA3F9179994210047D957 /* unzip.h */,
+				EEBEA3FA179994210047D957 /* zip.c */,
+				EEBEA3FB179994210047D957 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
 		EECEA1C917994BC000BFC1F5 = {
 			isa = PBXGroup;
 			children = (
+				EECEA2221799620900BFC1F5 /* libz.1.2.5.dylib */,
 				EECEA1DD17994BC000BFC1F5 /* OverlayImporter */,
 				EECEA1FF17994BC000BFC1F5 /* OverlayImporterTests */,
 				EECEA1D417994BC000BFC1F5 /* Frameworks */,
@@ -120,9 +190,8 @@
 		EECEA1DD17994BC000BFC1F5 /* OverlayImporter */ = {
 			isa = PBXGroup;
 			children = (
-				EECEA1E617994BC000BFC1F5 /* AppDelegate.h */,
-				EECEA1E717994BC000BFC1F5 /* AppDelegate.m */,
-				EECEA1EF17994BC000BFC1F5 /* OverlayImporter.xcdatamodeld */,
+				EEBEA3ED17998E880047D957 /* Classes */,
+				EECEA229179966C600BFC1F5 /* Resources */,
 				EECEA1DE17994BC000BFC1F5 /* Supporting Files */,
 			);
 			path = OverlayImporter;
@@ -131,6 +200,7 @@
 		EECEA1DE17994BC000BFC1F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EEBEA3EB179988E70047D957 /* MapMessage_Icon.png */,
 				EECEA1DF17994BC000BFC1F5 /* OverlayImporter-Info.plist */,
 				EECEA1E017994BC000BFC1F5 /* InfoPlist.strings */,
 				EECEA1E317994BC000BFC1F5 /* main.m */,
@@ -159,6 +229,15 @@
 				EECEA20217994BC000BFC1F5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EECEA229179966C600BFC1F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EECEA1EF17994BC000BFC1F5 /* OverlayImporter.xcdatamodeld */,
+				EECEA2241799666C00BFC1F5 /* Storyboard.storyboard */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +315,8 @@
 				EECEA1EA17994BC000BFC1F5 /* Default.png in Resources */,
 				EECEA1EC17994BC000BFC1F5 /* Default@2x.png in Resources */,
 				EECEA1EE17994BC000BFC1F5 /* Default-568h@2x.png in Resources */,
+				EECEA2251799666C00BFC1F5 /* Storyboard.storyboard in Resources */,
+				EEBEA3EC179988E70047D957 /* MapMessage_Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +354,13 @@
 				EECEA1E417994BC000BFC1F5 /* main.m in Sources */,
 				EECEA1E817994BC000BFC1F5 /* AppDelegate.m in Sources */,
 				EECEA1F117994BC000BFC1F5 /* OverlayImporter.xcdatamodeld in Sources */,
+				EECEA228179966B500BFC1F5 /* OverlayImporterViewController.m in Sources */,
+				EEBEA3F017998E9E0047D957 /* OverlayImportController.m in Sources */,
+				EEBEA3FE179994210047D957 /* ioapi.c in Sources */,
+				EEBEA3FF179994210047D957 /* mztools.c in Sources */,
+				EEBEA400179994210047D957 /* unzip.c in Sources */,
+				EEBEA401179994210047D957 /* zip.c in Sources */,
+				EEBEA402179994210047D957 /* ZipArchive.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +533,7 @@
 				EECEA20C17994BC000BFC1F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EECEA20D17994BC000BFC1F5 /* Build configuration list for PBXNativeTarget "OverlayImporterTests" */ = {
 			isa = XCConfigurationList;
@@ -453,6 +542,7 @@
 				EECEA20F17994BC000BFC1F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
